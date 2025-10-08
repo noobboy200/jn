@@ -36,3 +36,6 @@ document.addEventListener('DOMContentLoaded',()=>{applyLang();refreshFilters();r
 document.addEventListener('click',e=>{if(e.target.matches('[data-i18n="lang"],.btn-lang')){setLang(localStorage.getItem(LS_LANG)==='en'?'zh':'en')}if(e.target.matches('[data-i18n="theme"],.btn-theme')){toggleTheme()}});
 })();
 // REPLACE END: /assets/app.js
+// REPLACE START: Dropdown 穩定行為（滑鼠/觸控） 
+(function(){const $$=s=>document.querySelectorAll(s);const isTouch=matchMedia('(hover: none)').matches;$$('.nav .dropdown').forEach(dd=>{let t=null;const open=()=>{clearTimeout(t);dd.classList.add('open')};const close=()=>{t=setTimeout(()=>dd.classList.remove('open'),150)};dd.addEventListener('mouseenter',open);dd.addEventListener('mouseleave',close);const trigger=dd.querySelector(':scope > a');if(trigger){trigger.addEventListener('click',e=>{if(isTouch){e.preventDefault();dd.classList.toggle('open');}})};document.addEventListener('click',e=>{if(!dd.contains(e.target)) dd.classList.remove('open')});});})();
+// REPLACE END

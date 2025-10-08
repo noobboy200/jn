@@ -1,17 +1,53 @@
-<!-- REPLACE START: clothing.html 服裝總覽 -->
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>服裝總覽｜衣衫新生</title><link rel="stylesheet" href="assets/style.css"/></head><body>
-<header class="header"><nav class="nav"><div class="brand"><div class="logo"></div><a href="index.html" data-i18n="brand">衣衫新生｜傳統服飾轉型</a></div><button id="btn-hamburger" class="btn hamburger">☰</button><ul class="main"><li><a href="index.html" data-i18n="home">首頁</a></li><li class="dropdown"><a href="clothing.html" data-i18n="clothing">服裝</a><div class="dropdown-menu"><a href="men.html" data-i18n="men">男裝</a><a href="women.html" data-i18n="women">女裝</a><a href="kids.html" data-i18n="kids">童裝</a><a href="seniors.html" data-i18n="seniors">老人裝</a></div></li><li><a href="services.html" data-i18n="services">服務</a></li><li><a href="about.html" data-i18n="about">關於我們</a></li><li><a href="contact.html" data-i18n="contact">聯繫我們</a></li></ul><div class="right"><button class="btn" onclick="Site.setLang(localStorage.getItem('site_lang')==='en'?'zh':'en')" data-i18n="lang">中/英</button><button class="btn" onclick="Site.toggleTheme()" data-i18n="theme">日夜</button></div></nav></header>
-<div class="mobile-drawer" id="drawer"><a class="mobile-close btn">✕</a><a href="index.html" data-i18n="home">首頁</a><a href="men.html" data-i18n="men">男裝</a><a href="women.html" data-i18n="women">女裝</a><a href="kids.html" data-i18n="kids">童裝</a><a href="seniors.html" data-i18n="seniors">老人裝</a></div>
+<!-- REPLACE START: clothing.html -->
+<!doctype html><html lang="zh-Hant"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>服裝總覽｜衣衫新生</title>
+<link rel="stylesheet" href="assets/style.css?v=20251008-dd"/>
+<script defer src="assets/app.js?v=20251008-dd"></script>
+</head><body>
+<header class="header"><nav class="nav">
+  <div class="brand"><div class="logo"></div><a href="index.html" data-i18n="brand">衣衫新生｜傳統服飾轉型</a></div>
+  <button id="btn-hamburger" class="btn hamburger">☰</button>
+  <ul class="main">
+    <li><a href="index.html" data-i18n="home">首頁</a></li>
+    <li class="dropdown">
+      <a href="clothing.html" data-i18n="clothing">服裝</a>
+      <div class="dropdown-menu">
+        <a href="men.html" data-i18n="men">男裝</a>
+        <a href="women.html" data-i18n="women">女裝</a>
+        <a href="kids.html" data-i18n="kids">童裝</a>
+        <a href="seniors.html" data-i18n="seniors">老人裝</a>
+      </div>
+    </li>
+    <li><a href="services.html" data-i18n="services">服務</a></li>
+    <li><a href="about.html" data-i18n="about">關於我們</a></li>
+    <li><a href="contact.html" data-i18n="contact">聯繫我們</a></li>
+  </ul>
+  <div class="right">
+    <button class="btn" onclick="Site.setLang(localStorage.getItem('site_lang')==='en'?'zh':'en')" data-i18n="lang">中/英</button>
+    <button class="btn" onclick="Site.toggleTheme()" data-i18n="theme">日夜</button>
+  </div>
+</nav></header>
+
+<div class="mobile-drawer" id="drawer">
+  <a class="mobile-close btn">✕</a>
+  <a href="index.html" data-i18n="home">首頁</a>
+  <a href="men.html" data-i18n="men">男裝</a>
+  <a href="women.html" data-i18n="women">女裝</a>
+  <a href="kids.html" data-i18n="kids">童裝</a>
+  <a href="seniors.html" data-i18n="seniors">老人裝</a>
+</div>
+
 <main class="container">
-<section class="hero"><h1>服裝分類</h1><p class="muted">快速前往子分類頁面</p></section>
-<section class="grid grid-3">
-  <a class="card" href="men.html"><img src="https://picsum.photos/seed/m1/600/400" alt=""><div class="p"><h3>男裝</h3><p class="muted">襯衫 / T-shirt / 西裝</p></div></a>
-  <a class="card" href="women.html"><img src="https://picsum.photos/seed/w1/600/400" alt=""><div class="p"><h3>女裝</h3><p class="muted">洋裝 / 上衣 / 裙裝</p></div></a>
-  <a class="card" href="kids.html"><img src="https://picsum.photos/seed/k1/600/400" alt=""><div class="p"><h3>童裝</h3><p class="muted">親子套裝 / 活力運動</p></div></a>
-  <a class="card" href="seniors.html"><img src="https://picsum.photos/seed/s1/600/400" alt=""><div class="p"><h3>老人裝</h3><p class="muted">舒適透氣 / 易穿脫</p></div></a>
-</section>
+  <section class="hero"><h1>服裝分類</h1><p class="muted">快速前往子分類頁面</p></section>
+  <section class="grid grid-3">
+    <a class="card reveal tilt" href="men.html"><img src="https://picsum.photos/seed/m1/800/560" alt=""><div class="p"><h3>男裝</h3><p class="muted">襯衫 / T-shirt / 西裝</p></div></a>
+    <a class="card reveal tilt" href="women.html"><img src="https://picsum.photos/seed/w1/800/560" alt=""><div class="p"><h3>女裝</h3><p class="muted">洋裝 / 上衣 / 裙裝</p></div></a>
+    <a class="card reveal tilt" href="kids.html"><img src="https://picsum.photos/seed/k1/800/560" alt=""><div class="p"><h3>童裝</h3><p class="muted">親子套裝 / 活力運動</p></div></a>
+    <a class="card reveal tilt" href="seniors.html"><img src="https://picsum.photos/seed/s1/800/560" alt=""><div class="p"><h3>老人裝</h3><p class="muted">舒適透氣 / 易穿脫</p></div></a>
+  </section>
 </main>
+
 <footer class="footer"><div class="container">© 2025 衣衫新生</div></footer>
-<script src="assets/app.js"></script>
 </body></html>
 <!-- REPLACE END: clothing.html -->

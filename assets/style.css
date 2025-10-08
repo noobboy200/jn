@@ -76,3 +76,12 @@ a{text-decoration:none;color:inherit}
 /* 減少動作偏好 */
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 /* REPLACE END: /assets/style.css */
+/* REPLACE START: Dropdown 修正（穩定可點擊） */
+.nav .dropdown{position:relative}
+.nav .dropdown>a{display:inline-flex;align-items:center}
+.nav .dropdown::after{content:"";position:absolute;left:0;right:0;top:100%;height:12px}/* hover橋接，避免游標移動瞬間失焦 */
+.nav .dropdown-menu{position:absolute;left:0;top:calc(100% + 8px);min-width:200px;background:linear-gradient(180deg,var(--card),var(--surface));border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:8px;z-index:100;transform-origin:top;transform:translateY(6px) scale(.98);opacity:0;visibility:hidden;pointer-events:none;transition:.16s ease}
+.nav .dropdown-menu a{display:block;padding:10px 12px;border-radius:10px;color:var(--muted)}
+.nav .dropdown-menu a:hover{background:rgba(124,58,237,.12);color:var(--text)}
+.nav .dropdown:hover>.dropdown-menu,.nav .dropdown.open>.dropdown-menu,.nav .dropdown:focus-within>.dropdown-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scale(1)}
+/* REPLACE END */

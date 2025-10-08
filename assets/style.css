@@ -85,3 +85,14 @@ a{text-decoration:none;color:inherit}
 .nav .dropdown-menu a:hover{background:rgba(124,58,237,.12);color:var(--text)}
 .nav .dropdown:hover>.dropdown-menu,.nav .dropdown.open>.dropdown-menu,.nav .dropdown:focus-within>.dropdown-menu{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scale(1)}
 /* REPLACE END */
+/* REPLACE START: /assets/style.css — 主題與圖示按鈕增強（可直接覆蓋或追加到末尾） */
+:root{--bg:#0b0c10;--card:#0f1117;--surface:#121826;--text:#e6e8ee;--muted:#9aa4b2;--line:rgba(255,255,255,.08);--brand:#6ee7ff;--brand-2:#7c3aed;--brand-3:#22d3ee;--accent:#f472b6;--shadow:0 10px 30px rgba(10,12,28,.25);--radius:18px;--ring:0 0 0 8px rgba(124,58,237,.15)}
+:root:not([data-theme="dark"]){--bg:#f6f7fb;--card:#ffffff;--surface:#ffffff;--text:#0b1220;--muted:#526079;--line:rgba(16,24,40,.08);--shadow:0 10px 30px rgba(15,17,23,.06)}
+/* 圖示按鈕（用在 header 的日夜切換） */
+.btn-icon{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;padding:0;border-radius:12px;border:1px solid var(--line);background:linear-gradient(180deg,var(--surface),color-mix(in oklab,var(--surface),#fff 4%));transition:transform .15s ease,box-shadow .15s ease}
+.btn-icon:hover{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.16)}
+.btn-icon svg{width:18px;height:18px;display:block}
+.theme-sun{stroke:currentColor;fill:none}
+.theme-moon{fill:currentColor}
+@media (prefers-reduced-motion:reduce){.btn-icon{transition:none}}
+/* REPLACE END: /assets/style.css */

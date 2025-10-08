@@ -1,14 +1,47 @@
-<!-- REPLACE START: kids.html 童裝 -->
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>童裝｜衣衫新生</title><link rel="stylesheet" href="assets/style.css"/></head><body>
-<header class="header"><nav class="nav"><div class="brand"><div class="logo"></div><a href="index.html">衣衫新生</a></div><button id="btn-hamburger" class="btn hamburger">☰</button><ul class="main"><li><a href="index.html">首頁</a></li><li class="dropdown"><a href="clothing.html">服裝</a><div class="dropdown-menu"><a href="men.html">男裝</a><a href="women.html">女裝</a><a href="kids.html">童裝</a><a href="seniors.html">老人裝</a></div></li><li><a href="services.html">服務</a></li><li><a href="about.html">關於我們</a></li><li><a href="contact.html">聯繫我們</a></li></ul><div class="right"><button class="btn" onclick="Site.setLang(localStorage.getItem('site_lang')==='en'?'zh':'en')" data-i18n="lang">中/英</button><button class="btn" onclick="Site.toggleTheme()" data-i18n="theme">日夜</button></div></nav></header>
-<div class="mobile-drawer" id="drawer"><a class="mobile-close btn">✕</a><a href="index.html">首頁</a><a href="clothing.html">服裝</a></div>
-<main class="container"><section class="hero"><h1>童裝</h1><p class="muted">親子套裝 / 活力運動</p></section>
-<section class="grid grid-3">
-  <div class="card"><img src="https://picsum.photos/seed/k2/600/400" alt=""><div class="p"><h4>親子運動套裝</h4><p class="muted">運動 · 活潑</p><button class="btn">加入詢問車</button></div></div>
-  <div class="card"><img src="https://picsum.photos/seed/k3/600/400" alt=""><div class="p"><h4>涼感短袖</h4><p class="muted">休閒 · 透氣</p><button class="btn">加入詢問車</button></div></div>
-  <div class="card"><img src="https://picsum.photos/seed/k4/600/400" alt=""><div class="p"><h4>童趣花裙</h4><p class="muted">活潑 · 可愛</p><button class="btn">加入詢問車</button></div></div>
-</section></main>
+<!-- REPLACE START: kids.html -->
+<!doctype html><html lang="zh-Hant"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>童裝｜衣衫新生</title>
+<link rel="stylesheet" href="assets/style.css?v=20251008-dd"/>
+<script defer src="assets/app.js?v=20251008-dd"></script>
+</head><body>
+<header class="header"><nav class="nav">
+  <div class="brand"><div class="logo"></div><a href="index.html">衣衫新生</a></div>
+  <button id="btn-hamburger" class="btn hamburger">☰</button>
+  <ul class="main">
+    <li><a href="index.html" data-i18n="home">首頁</a></li>
+    <li class="dropdown">
+      <a href="clothing.html" data-i18n="clothing">服裝</a>
+      <div class="dropdown-menu">
+        <a href="men.html" data-i18n="men">男裝</a>
+        <a href="women.html" data-i18n="women">女裝</a>
+        <a href="kids.html" data-i18n="kids">童裝</a>
+        <a href="seniors.html" data-i18n="seniors">老人裝</a>
+      </div>
+    </li>
+    <li><a href="services.html" data-i18n="services">服務</a></li>
+    <li><a href="about.html" data-i18n="about">關於我們</a></li>
+    <li><a href="contact.html" data-i18n="contact">聯繫我們</a></li>
+  </ul>
+  <div class="right">
+    <button class="btn" onclick="Site.setLang(localStorage.getItem('site_lang')==='en'?'zh':'en')" data-i18n="lang">中/英</button>
+    <button class="btn" onclick="Site.toggleTheme()" data-i18n="theme">日夜</button>
+  </div>
+</nav></header>
+
+<div class="mobile-drawer" id="drawer"><a class="mobile-close btn">✕</a>
+  <a href="index.html" data-i18n="home">首頁</a><a href="clothing.html" data-i18n="clothing">服裝</a>
+</div>
+
+<main class="container">
+  <section class="hero"><h1>童裝</h1><p class="muted">親子套裝 / 活力運動</p></section>
+  <section class="grid grid-3">
+    <div class="card reveal tilt"><img src="https://picsum.photos/seed/k2/800/560" alt=""><div class="p"><h4>親子運動套裝</h4><p class="muted">運動 · 活潑</p><button class="btn rippleable" data-i18n="add">加入詢問車</button></div></div>
+    <div class="card reveal tilt"><img src="https://picsum.photos/seed/k3/800/560" alt=""><div class="p"><h4>涼感短袖</h4><p class="muted">休閒 · 透氣</p><button class="btn rippleable" data-i18n="add">加入詢問車</button></div></div>
+    <div class="card reveal tilt"><img src="https://picsum.photos/seed/k4/800/560" alt=""><div class="p"><h4>童趣花裙</h4><p class="muted">活潑 · 可愛</p><button class="btn rippleable" data-i18n="add">加入詢問車</button></div></div>
+  </section>
+</main>
+
 <footer class="footer"><div class="container">© 2025 衣衫新生</div></footer>
-<script src="assets/app.js"></script>
 </body></html>
 <!-- REPLACE END: kids.html -->

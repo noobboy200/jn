@@ -1,25 +1,60 @@
-<!-- REPLACE START: contact.html 聯繫我們 -->
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>聯繫我們｜衣衫新生</title><link rel="stylesheet" href="assets/style.css"/></head><body>
-<header class="header"><nav class="nav"><div class="brand"><div class="logo"></div><a href="index.html">衣衫新生</a></div><button id="btn-hamburger" class="btn hamburger">☰</button><ul class="main"><li><a href="index.html">首頁</a></li><li class="dropdown"><a href="clothing.html">服裝</a><div class="dropdown-menu"><a href="men.html">男裝</a><a href="women.html">女裝</a><a href="kids.html">童裝</a><a href="seniors.html">老人裝</a></div></li><li><a href="services.html">服務</a></li><li><a href="about.html">關於我們</a></li><li><a href="contact.html">聯繫我們</a></li></ul><div class="right"><button class="btn" onclick="Site.setLang(localStorage.getItem('site_lang')==='en'?'zh':'en')" data-i18n="lang">中/英</button><button class="btn" onclick="Site.toggleTheme()" data-i18n="theme">日夜</button></div></nav></header>
-<div class="mobile-drawer" id="drawer"><a class="mobile-close btn">✕</a><a href="index.html">首頁</a><a href="clothing.html">服裝</a></div>
-<main class="container">
-<section class="hero"><h1>聯繫我們</h1><p class="muted">歡迎洽談數位轉型、直播導入、跨境電商合作</p></section>
-<section class="card"><div class="p">
-<form action="https://formsubmit.co/your@email.com" method="POST">
-<input type="hidden" name="_captcha" value="false"/><input type="hidden" name="_next" value="https://yourdomain.com/thanks.html"/>
-<div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
-<input class="select" name="name" placeholder="姓名 / Name" required/>
-<input class="select" name="phone" placeholder="電話 / Phone" required/>
-<input class="select" name="email" type="email" placeholder="Email" required/>
-<input class="select" name="brand" placeholder="店名 / Brand"/>
-<select class="select" name="topic"><option>直播導入</option><option>平台開店</option><option>倉儲 SOP</option><option>其他</option></select>
+<!-- REPLACE START: contact.html -->
+<!doctype html><html lang="zh-Hant"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>聯繫我們｜衣衫新生</title>
+<link rel="stylesheet" href="assets/style.css?v=20251008-dd"/>
+<script defer src="assets/app.js?v=20251008-dd"></script>
+</head><body>
+<header class="header"><nav class="nav">
+  <div class="brand"><div class="logo"></div><a href="index.html">衣衫新生</a></div>
+  <button id="btn-hamburger" class="btn hamburger">☰</button>
+  <ul class="main">
+    <li><a href="index.html" data-i18n="home">首頁</a></li>
+    <li class="dropdown">
+      <a href="clothing.html" data-i18n="clothing">服裝</a>
+      <div class="dropdown-menu">
+        <a href="men.html" data-i18n="men">男裝</a>
+        <a href="women.html" data-i18n="women">女裝</a>
+        <a href="kids.html" data-i18n="kids">童裝</a>
+        <a href="seniors.html" data-i18n="seniors">老人裝</a>
+      </div>
+    </li>
+    <li><a href="services.html" data-i18n="services">服務</a></li>
+    <li><a href="about.html" data-i18n="about">關於我們</a></li>
+    <li><a href="contact.html" data-i18n="contact">聯繫我們</a></li>
+  </ul>
+  <div class="right">
+    <button class="btn" onclick="Site.setLang(localStorage.getItem('site_lang')==='en'?'zh':'en')" data-i18n="lang">中/英</button>
+    <button class="btn" onclick="Site.toggleTheme()" data-i18n="theme">日夜</button>
+  </div>
+</nav></header>
+
+<div class="mobile-drawer" id="drawer"><a class="mobile-close btn">✕</a>
+  <a href="index.html" data-i18n="home">首頁</a><a href="clothing.html" data-i18n="clothing">服裝</a>
 </div>
-<textarea class="select" name="msg" rows="6" placeholder="您的需求 / Message" style="margin-top:10px"></textarea>
-<label class="badge" style="margin-top:10px"><input type="checkbox" required/> 我同意以 Email 聯繫，僅用於回覆此次詢問。</label>
-<div style="margin-top:12px"><button class="btn">送出</button></div>
-</form></div></section>
+
+<main class="container">
+  <section class="hero"><h1>聯繫我們</h1><p class="muted">歡迎洽談數位轉型、直播導入、跨境電商合作</p></section>
+  <section class="card reveal"><div class="p">
+    <form action="https://formsubmit.co/your@email.com" method="POST">
+      <input type="hidden" name="_captcha" value="false"/>
+      <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html"/>
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px">
+        <input class="select" name="name" placeholder="姓名 / Name" required/>
+        <input class="select" name="phone" placeholder="電話 / Phone" required/>
+        <input class="select" name="email" type="email" placeholder="Email" required/>
+        <input class="select" name="brand" placeholder="店名 / Brand"/>
+        <select class="select" name="topic">
+          <option>直播導入</option><option>平台開店</option><option>倉儲 SOP</option><option>其他</option>
+        </select>
+      </div>
+      <textarea class="select" name="msg" rows="6" placeholder="您的需求 / Message" style="margin-top:10px"></textarea>
+      <label class="badge" style="margin-top:10px"><input type="checkbox" required/> 我同意以 Email 聯繫，僅用於回覆此次詢問。</label>
+      <div style="margin-top:12px"><button class="btn rippleable">送出</button></div>
+    </form>
+  </div></section>
 </main>
+
 <footer class="footer"><div class="container">© 2025 衣衫新生</div></footer>
-<script src="assets/app.js"></script>
 </body></html>
 <!-- REPLACE END: contact.html -->
